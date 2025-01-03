@@ -1,0 +1,118 @@
+/* Reset dasar untuk menghilangkan margin dan padding default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b2d8b2; /* Warna latar belakang header (hijau sage) */
+    padding: 10px 20px;
+    color: white; /* Warna teks header */
+}
+
+header .logo img {
+    max-width: 100%; /* Responsif untuk logo */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Warna teks link */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Efek hover pada link */
+}
+
+main {
+    padding: 20px;
+    background-color: white; /* Warna latar belakang konten */
+    margin: 20px; /* Margin untuk konten */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+}
+
+h1 {
+    color: #4a7c4a; /* Warna judul (hijau sage lebih gelap) */
+    margin-bottom: 20px; /* Jarak bawah judul */
+}
+
+h2 {
+    color: #333; /* Warna sub-judul */
+    margin-top: 20px; /* Jarak atas sub-judul */
+    margin-bottom: 10px; /* Jarak bawah sub-judul */
+}
+
+form {
+    background-color: white; /* Warna latar belakang putih */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    padding: 20px; /* Padding di dalam form */
+    max-width: 400px; /* Lebar maksimum form */
+    margin: 20px auto; 
+}
+
+form label {
+    display: block; /* Menampilkan label sebagai blok */
+    margin-bottom: 5px; /* Jarak bawah label */
+}
+
+form input {
+    width: 100%; /* Lebar input penuh */
+    padding: 8px; /* Padding dalam input */
+    margin-bottom: 10px; /* Jarak bawah input */
+    border: 1px solid #ccc; /* Border input */
+    border-radius: 4px; /* Sudut melengkung input */
+}
+
+form button {
+    padding: 10px 15px; /* Padding tombol */
+    background-color: #4a7c4a; /* Warna latar belakang tombol (hijau sage) */
+    color: white; /* Warna teks tombol */
+    border: none; /* Tanpa border */
+    border-radius: 4px; /* Sudut melengkung tombol */
+    cursor: pointer; /* Kursor pointer saat hover */
+}
+
+form button:hover {
+    background-color: #3a5a3a; /* Warna latar belakang tombol saat hover */
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Mengubah arah flex menjadi kolom */
+        align-items: flex-start; /* Menyusun item di kiri */
+    }
+
+    nav ul {
+        flex-direction: column; /* Mengubah arah menu menjadi kolom */
+        width: 100%; /* Lebar penuh untuk menu */
+    }
+
+    nav ul li {
+        margin-left: 0; /* Menghilangkan margin kiri */
+        margin-bottom: 10px; /* Jarak bawah antar item menu */
+    }
+}
